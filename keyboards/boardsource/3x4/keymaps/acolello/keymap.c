@@ -9,7 +9,10 @@ enum custom_keycodes {
     DESKTOP_LEFT,
     DESKTOP_RIGHT,
     DESKTOP_NEW,
+<<<<<<< HEAD
     VIEW_DESKTOPS,
+=======
+>>>>>>> d78612c42f (Change arrow keys to desktop control)
     KILL
 };
 
@@ -38,6 +41,7 @@ bool process_record_user(uint16_t keycode, keyrecord_t *record) {
           case DESKTOP_RIGHT:
               SEND_STRING(SS_LCTL(SS_LGUI(SS_TAP(X_RIGHT))));
               break;
+<<<<<<< HEAD
           //unused
           case DESKTOP_NEW:
               SEND_STRING(SS_LCTL(SS_LGUI(SS_TAP(X_D))));
@@ -45,6 +49,11 @@ bool process_record_user(uint16_t keycode, keyrecord_t *record) {
           case VIEW_DESKTOPS:
               SEND_STRING(SS_LGUI(SS_TAP(X_TAB)));
               break;
+=======
+          case DESKTOP_NEW:
+              SEND_STRING(SS_LCTL(SS_LGUI(SS_TAP(X_D))));
+              break;
+>>>>>>> d78612c42f (Change arrow keys to desktop control)
           case KILL:
               SEND_STRING(SS_LALT(SS_TAP(X_F4)));
               break;
@@ -61,7 +70,11 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 
   [_MAIN] = LAYOUT(
   DESKTOP_LEFT,  GITHUB,   KC_MPRV,    FUSION, 
+<<<<<<< HEAD
   VIEW_DESKTOPS,   KILL,     KC_MPLY,    SAM, 
+=======
+  DESKTOP_NEW,   KILL,     KC_MPLY,    SAM, 
+>>>>>>> d78612c42f (Change arrow keys to desktop control)
   DESKTOP_RIGHT, KC_TILDE, KC_MNXT,    VS_CODE
   )
 
