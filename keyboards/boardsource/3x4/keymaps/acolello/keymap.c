@@ -9,7 +9,10 @@ enum custom_keycodes {
     DESKTOP_LEFT,
     DESKTOP_RIGHT,
     DESKTOP_NEW,
+<<<<<<< HEAD
     VIEW_DESKTOPS,
+=======
+>>>>>>> 80352676eb (Change arrow keys to desktop control)
     KILL
 };
 
